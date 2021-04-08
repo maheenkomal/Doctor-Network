@@ -1,0 +1,741 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Doctor Network</title>
+    <!--meta tag to make website work on cross-devices-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Add the google-fonts link if you want default styling -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <!-- Add the slick-theme.css if you want default styling -->
+
+    <!-- Add font-awesome if you want default styling -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link rel="stylesheet" type="text/css" href="slick-1.8.1/slick/slick-theme.css">
+    <!-- Add the slick-.css if you want default styling -->
+    <link rel="stylesheet" type="text/css" href="slick-1.8.1/slick/slick.css">
+    <!--CSS EXTERNAL LINK-->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!--==================================================================
+    =============================== NAV-START ========================-->
+    <nav id="nav">
+        <div class="t-nav">
+            <div class="container">
+                <div class="top-nav">
+                    <div class="top-text">
+                        <p class="top-txt">Welcome to Doctor Network: <span class="top-txt1"> Lorem Ipsum is simply
+                                dummy printing and typesetting industry.</span></p>
+                    </div>
+                    <ul class="top-ul">
+
+                        <li><a class="fb-anchor" href="#fb"> <i class="font-icon fa fa-facebook"></i></a></li>
+                        <li><a class="twitter-anchor fa" href="#twitter"><i class="font-icon fa fa-twitter"></i></a>
+                        </li>
+                        <li><a class="lin-anchor" href="#lin"><i class="font-icon fa fa-linkedin-square"></i></a></li>
+                        <li><a class="inst-anchor" href="#inst"><i class="font-icon fa fa-instagram"></i></a></li>
+                        <li><a class="login-anchor" href="#login"><i class="font-icon fa fa-user"></i>
+                                <p class="login-text">Login</p>
+                            </a></li>
+                          <button class="join-button">Join Us</button>
+                    </ul>
+                    
+                </div>
+            </div>
+        </div>
+
+        <div class="main-nav">
+            <div class="container">
+                <div class="main-box">
+                    <img class="main-logo" src="images/Doctor-Network.png" alt="missing">
+                    <div class="icon" onclick="myFunction(this)">
+                        <div class="bar1"></div>
+                        <div class="bar2"></div>
+                        <div class="bar3"></div>
+                    </div>
+                    <ul class="main-ul">
+                        <li><a class="home" href="#home">Home</a></li>
+                        <li><a class="about" href="#about">About Us</a></li>
+                        <li><a class="benefit" href="#benefit">Benefits</a></li>
+                        <li><a class="group" href="#group">Groups</a></li>
+                        <li><a class="news" href="#news">News & Events</a></li>
+                        <li><a class="contact" href="#contact">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!--==================================================================
+    =============================== NAV-END ========================-->
+    </nav>
+    <!--==================================================================
+    =============================== BANNER-START ========================-->
+    <section id="banner">
+
+        <div class="bannerSlider">
+
+            <div class="banner-info">
+                <div class="container">
+                    <div class="row">
+                        <div class="banner-text">
+                            <div class="col7">
+                                <h1 class="banner-heading">Best Doctors Network platform that you’ve been waiting..</h1>
+                                <p class="banner-para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Proin
+                                    nibh augue conseqaut nibbhi ellit ipsum consectetur.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="banner-info1">
+                <div class="container">
+                    <div class="row">
+                        <div class="info1-text banner-text">
+                            <div class="col7">
+                                <h1 class="banner-heading">Top rated Doctors from the world that you deserve..</h1>
+                                <p class="banner-para">Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum.
+                                    Fusce nec tellus sed augue semper porta. Mauris massa. </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="banner-tab">
+
+            <input type="radio" name="tabs" id="tab1" checked="">
+            <label for="tab1" class="tab tab1">Search</label>
+            <input type="radio" name="tabs" id="tab2">
+            <label for="tab2" class="tab tab2">Member Login</label>
+            <input type="radio" name="tabs" id="tab3">
+            <label for="tab3" class="tab tab3">Register Now</label>
+
+
+            <div id="tab-content1" class="tab-content1">
+                <form class="banner-form">
+                    <label class="banner-name" for="fname">First NAME</label>
+                    <input class="banner-input" type="text" id="fname" name="firstname">
+
+                    <label class="banner-name" for="lname">Last NAME</label>
+                    <input class="banner-input" type="text" id="lname" name="lastname">
+
+                    <div class="tab-button">
+                        <button class="tab-btn">SEARCH</button>
+                    </div>
+
+                    <div class="tab-text">
+                        <p class="tab-txt">Or login with:</p>
+                    </div>
+
+                    <div class="tab-icon">
+                        <a class="fb-anchor" href="#fb"> <i class="tab-icon fa fa-facebook"></i></a>
+                        <a class="twitter-anchor fa" href="#twitter"><i class="tab-icon fa fa-twitter"></i></a>
+                        <a class="lin-anchor" href="#lin"><i class="tab-icon fa fa-linkedin-square"></i></a>
+                        <a class="inst-anchor" href="#inst"><i class="tab-icon fa fa-instagram"></i></a>
+                    </div>
+                    <div class="tab-border"></div>
+                    <div class="tab-click">
+                        <p class="tab-forget">Forgot your password? <span><a href="#click"> Click Here</a></span></p>
+
+                    </div>
+
+                </form>
+
+            </div>
+
+            <div id="tab-content2" class="tab-content1">
+                <form class="banner-form">
+                    <label class="banner-name" for="fname">USERNAME</label>
+                    <input class="banner-input" type="text" id="fname" name="firstname">
+
+                    <label class="banner-name" for="lname">PASSWORD</label>
+                    <input class="banner-input" type="text" id="lname" name="lastname">
+
+                    <div class="tab-button">
+                        <button class="tab-btn">LOGIN</button>
+                    </div>
+
+                    <div class="tab-text">
+                        <p class="tab-txt">Or login with:</p>
+                    </div>
+
+                    <div class="tab-icon">
+                        <a class="fb-anchor" href="#fb"> <i class="tab-icon fa fa-facebook"></i></a>
+                        <a class="twitter-anchor fa" href="#twitter"><i class="tab-icon fa fa-twitter"></i></a>
+                        <a class="lin-anchor" href="#lin"><i class="tab-icon fa fa-linkedin-square"></i></a>
+                        <a class="inst-anchor" href="#inst"><i class="tab-icon fa fa-instagram"></i></a>
+                    </div>
+                    <div class="tab-border"></div>
+                    <div class="tab-click">
+                        <p class="tab-forget">Forgot your password? <span><a href="#click"> Click Here</a></span></p>
+
+                    </div>
+
+                </form>
+
+            </div>
+
+
+            <div id="tab-content3" class="tab-content1">
+                <form class="banner-form">
+                    <label class="banner-name" for="fname">FULL Name</label>
+                    <input class="banner-input" type="text" id="fname" name="firstname">
+
+                    <label class="banner-name" for="lname">PASSWORD</label>
+                    <input class="banner-input" type="text" id="lname" name="lastname">
+
+                    <div class="tab-button">
+                        <button class="tab-btn">REGISTER</button>
+                    </div>
+
+                    <div class="tab-text">
+                        <p class="tab-txt">Or login with:</p>
+                    </div>
+
+                    <div class="tab-icon">
+                        <a class="fb-anchor" href="#fb"> <i class="tab-icon fa fa-facebook"></i></a>
+                        <a class="twitter-anchor fa" href="#twitter"><i class="tab-icon fa fa-twitter"></i></a>
+                        <a class="lin-anchor" href="#lin"><i class="tab-icon fa fa-linkedin-square"></i></a>
+                        <a class="inst-anchor" href="#inst"><i class="tab-icon fa fa-instagram"></i></a>
+                    </div>
+                    <div class="tab-border"></div>
+                    <div class="tab-click">
+                        <p class="tab-forget">Forgot your password? <span><a href="#click"> Click Here</a></span></p>
+
+                    </div>
+
+                </form>
+            </div>
+
+
+        </div>
+        <!--==================================================================
+    =============================== BANNER-END ========================-->
+    </section>
+
+    <!--==================================================================
+    =============================== Awareness-START ========================-->
+    <section id="aware">
+        <div class="container">
+            <div class="row">
+
+                <div class="col4">
+                    <div class="aware-bar1 bar">
+
+                        <img src="images/phone.png" alt="missing">
+                        <div class="aware-text">
+                            <p class="aware-txt">Stay in touch with
+                                your colleagues</p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col4">
+                    <div class="aware-bar2 bar">
+
+                        <img src="images/news.png" alt="missing">
+                        <div class="aware-text">
+                            <p class="aware-txt">Get the latest news
+                                in your industry </p>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col4">
+                    <div class="aware-bar3 bar">
+
+                        <img src="images/network.png" alt="missing">
+                        <div class="aware-text">
+                            <p class="aware-txt">Share what’s up with
+                                your loveones</p>
+                        </div>
+
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+        <!--==================================================================
+    =============================== Awareness-END ========================-->
+    </section>
+    <!--==================================================================
+    =============================== Article-START ========================-->
+    <section id="article">
+
+        <div class="article-info">
+            <div class="row">
+
+                <div class="col6">
+                    <img class="article-img1" src="images/article-img1.png" alt="missing">
+                </div>
+
+                <div class="col6">
+
+                    <article class="article-box">
+                        <h1 class="article-h">Interact with other
+                            professionals</h1>
+                        <p class="article-p">Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                            accusantium doloremque laudantium, totam rem aperiam,
+                            eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt
+                            explicabo.</p>
+                    </article>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="article-info">
+            <div class="row">
+
+
+
+                <div class="col6">
+
+                    <article class="article-box1">
+                        <h1 class="article-h">Collaborate on
+                            a project</h1>
+                        <p class="article-p">Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                            accusantium doloremque laudantium, totam rem aperiam,
+                            eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt
+                            explicabo.</p>
+                    </article>
+                </div>
+
+
+
+                <div class="col6">
+                    <img class="article-img2" src="images/article-img2.png" alt="missing">
+                </div>
+
+            </div>
+        </div>
+
+        <!--==================================================================
+    =============================== Article-END ========================-->
+    </section>
+    <!--==================================================================
+    =============================== Speciality-START ========================-->
+    <section id="speciality">
+        <div class="container">
+
+            <div class="speciality-text">
+                <h1 class="speciality-h">Browse by Speciality</h1>
+                <p class="speciality-p">1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33
+                    from</p>
+            </div>
+
+            <div class="speciality-slider">
+                <!-- <div class="row"> -->
+
+                <div class="s-slide s1">
+                    <img class="s-image" src="images/s1.png" alt="missing">
+                    <div class="s-border"></div>
+                    <div class="s-text">
+                        <h3 class="s-heading">Neurological</h3>
+                        <p class="s-para">Lorem Ipsum comes from sections 1.10.32 and 1.10.33</p>
+                    </div>
+                </div>
+
+                <div class="s-slide s2">
+                    <img class="s-image" src="images/s2.png" alt="missing">
+                    <div class="s-border"></div>
+                    <div class="s-text">
+                        <h3 class="s-heading">Dermatology</h3>
+                        <p class="s-para">Lorem Ipsum comes from sections 1.10.32 and 1.10.33</p>
+                    </div>
+                </div>
+
+                <div class="s-slide s3">
+                    <img class="s-image" src="images/s3.png" alt="missing">
+                    <div class="s-border"></div>
+                    <div class="s-text">
+                        <h3 class="s-heading">Medicine</h3>
+                        <p class="s-para">Lorem Ipsum comes from sections 1.10.32 and 1.10.33</p>
+                    </div>
+
+                </div>
+
+                <div class="s-slide s4">
+                    <img class="s-image" src="images/s4.png" alt="missing">
+                    <div class="s-border"></div>
+                    <div class="s-text">
+                        <h3 class="s-heading">Pathology</h3>
+                        <p class="s-para">Lorem Ipsum comes from sections 1.10.32 and 1.10.33</p>
+                    </div>
+
+                </div>
+
+                <div class="s-slide s5">
+                    <img class="s-image" src="images/s5.png" alt="missing">
+                    <div class="s-border"></div>
+                    <div class="s-text">
+                        <h3 class="s-heading">Emergency</h3>
+                        <p class="s-para">Lorem Ipsum comes from sections 1.10.32 and 1.10.33</p>
+                    </div>
+                </div>
+
+                <div class="s-slide s5">
+                    <img class="s-image" src="images/s5.png" alt="missing">
+                    <div class="s-border"></div>
+                    <div class="s-text">
+                        <h3 class="s-heading">Emergency</h3>
+                        <p class="s-para">Lorem Ipsum comes from sections 1.10.32 and 1.10.33</p>
+                    </div>
+                </div>
+
+
+                <!-- </div> -->
+            </div>
+
+            <div class="speciality-button">
+                <button class="speciality-btn">Get Started Now</button>
+            </div>
+
+        </div>
+        <!--==================================================================
+    =============================== Speciality-END ========================-->
+    </section>
+    <!--==================================================================
+    =============================== Counter-START ========================-->
+    <section id="counter">
+        <div class="container">
+            <div class="row">
+                <div class="counter-box">
+                    <h2 class="counter-h"><span class="count">222</span><span>K</span></h2>
+                    <p class="counter-p">Global Members</p>
+                </div>
+                <div class="counter-box">
+                    <h2 class="counter-h"><span class="count">9</span><span>.3M</span></h2>
+                    <p class="counter-p">Member Referrals
+                        (last 12 months)</p>
+                </div>
+                <div class="counter-box">
+                    <h2 class="counter-h"><span class="count">8061</span></h2>
+                    <p class="counter-p">Global Members</p>
+                </div>
+                <div class="counter-box">
+                    <h2 class="counter-h"><span>$</span><span class="count">13</span><span>.7B</span></h2>
+                    <p class="counter-p long-p">Member Closed Business (last 12 months)</p>
+                </div>
+
+                <!-- <div style="clear:both"></div>
+        <div id="talkbubble"><span class="count">1421</span></div>
+        <div id="talkbubble"><span class="count">145</span></div>
+        <div id="talkbubble"><span class="count">78</span></div> -->
+            </div>
+        </div>
+        <!--==================================================================
+    =============================== Counter-END ========================-->
+    </section>
+    <!--==================================================================
+    =============================== Work-START ========================-->
+    <section id="work">
+        <div class="container">
+            <div class="row">
+
+
+                <div class="col6">
+                    <div class="work-info">
+
+                        <div class="work-text">
+                            <h3 class="work-h">How It Works</h3>
+                            <p class="work-p">Contrary to popular belief, Lorem Ipsum is not simply random text. It has
+                                roots in a piece of classical Latin literature from 45 BC</p>
+                        </div>
+
+                        <div class="work-tab">
+
+                            <input type="radio" name="tabs-w" id="tabw1" checked="">
+                            <label for="tabw1" class="tab-w tab1-w">Step 1</label>
+                            <input type="radio" name="tabs-w" id="tabw2">
+                            <label for="tabw2" class="tab-w tab2-w">Step 2</label>
+                            <input type="radio" name="tabs-w" id="tabw3">
+                            <label for="tabw3" class="tab-w tab3-w">Step 3</label>
+                            <input type="radio" name="tabs-w" id="tabw4">
+                            <label for="tabw4" class="tab-w tab4-w">Step 4</label>
+
+                            <div id="tab-wcontent1" class="tab-wcontent">
+                                <h3 class="wtab-h">True generator on Internet</h3>
+                                <p class="wtab-p">It uses a dictionary of over 200 Latin words, combined with a handful
+                                    of model sentence structures, to generate Lorem Ipsum which looks reasonable.</p>
+                            </div>
+
+                            <div id="tab-wcontent2" class="tab-wcontent">
+                                <h3 class="wtab-h">Follow our Latest stories</h3>
+                                <p class="wtab-p">Contrary to popular belief, Lorem Ipsum is not simply random text. It
+                                    has
+                                    roots in a piece of classical Latin literature from 45 BC</p>
+                            </div>
+
+                            <div id="tab-wcontent3" class="tab-wcontent">
+                                <h3 class="wtab-h">New Approaches</h3>
+                                <p class="wtab-p">It uses a dictionary of over 200 Latin words, combined with a handful
+                                    of model sentence structures, to generate Lorem Ipsum which looks reasonable.</p>
+                            </div>
+
+                            <div id="tab-wcontent4" class="tab-wcontent">
+                                <h3 class="wtab-h">More about ourself</h3>
+                                <p class="wtab-p">Contrary to popular belief, Lorem Ipsum is not simply random text. It
+                                    has
+                                    roots in a piece of classical Latin literature from 45 BC</p>
+                            </div>
+
+                        </div>
+
+                        <div class="work-button">
+                            <button class="work-btn">Sign Up It’s Free</button>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col6">
+                    <div class=" round-box">
+
+                        <div class="work-slider">
+
+                            <div class="round-slider">
+                                <div class="round-shape">
+                                    <img class="round-icon" src="images/man.png" alt="missing">
+                                </div>
+
+                            </div>
+
+                            <div class="round-slider">
+                                <div class="round-shape">
+                                    <img class="round-icon" src="images/lady.png" alt="missing">
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+            <!--==================================================================
+    =============================== Work-END ========================-->
+    </section>
+    <!--==================================================================
+    =============================== Test-START ========================-->
+    <section id="test">
+        <div class="container">
+
+            <div class="test-card">
+
+                <div class="card">
+                    <div class="card-h">Advance Your Career</div>
+                    <div class="card-box">
+                        <div class="test-icon">
+                            <img class="test-ishape" src="images/colon.png" alt="missing">
+                        </div>
+                        <div class="test-image">
+                            <img class="test-shape" src="images/card1.png" alt="missing">
+                        </div>
+                        <div class="test-text">
+                            <p class="test-p">James Kennedy, Harvard Law School</p>
+                            <p class="test-p1">The standard chunk of Lorem Ipsum used since the 1500s is reproduced
+                                below for those interested. </p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-h">Build Your Team</div>
+                    <div class="card-box">
+                        <div class="test-icon">
+                            <img class="test-ishape" src="images/colon.png" alt="missing">
+                        </div>
+                        <div class="test-image">
+                            <img class="test-shape" src="images/card2.png" alt="missing">
+                        </div>
+                        <div class="test-text">
+                            <p class="test-p">James Kennedy, Harvard Law School</p>
+                            <p class="test-p1">The standard chunk of Lorem Ipsum used since the 1500s is reproduced
+                                below for those interested. </p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-h">Get Advise</div>
+                    <div class="card-box">
+                        <div class="test-icon">
+                            <img class="test-ishape" src="images/colon.png" alt="missing">
+                        </div>
+                        <div class="test-image">
+                            <img class="test-shape" src="images/card3.png" alt="missing">
+                        </div>
+                        <div class="test-text">
+                            <p class="test-p">James Kennedy, Harvard Law School</p>
+                            <p class="test-p1">The standard chunk of Lorem Ipsum used since the 1500s is reproduced
+                                below for those interested. </p>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        <!--==================================================================
+    =============================== Test-END ========================-->
+    </section>
+    <!--==================================================================
+    =============================== CTA-START ========================-->
+    <section id="cta">
+        <div class="cta-info">
+            <div class="container">
+
+                <div class="cta-text">
+                    <h3 class="cta-h">FOR COMPANIES</h3>
+                    <h3 class="cta-h1">You are Missing Out.</h3>
+                    <p class="cta-p"> If you are going to use a passage of Lorem Ipsum, you need to be
+                        sure there isn't anything embarrassing hidden </p>
+                </div>
+
+                <div class="speciality-button">
+                    <button class="speciality-btn">Get Started Now</button>
+                </div>
+
+            </div>
+        </div>
+        <!--==================================================================
+    =============================== CTA-END ========================-->
+    </section>
+    <!--==================================================================
+    =============================== CTA-START ========================-->
+    <footer id="contact">
+        <div class="container">
+            <div class="contact-p row">
+                <div class="contact-sec1">
+
+                    <div class="contact-info">
+                        <h3 class="contact-h">LET'S NAVIGATE THIS TOGETHER.</h3>
+                        <p class="contact-index">All the Lorem Ipsum generators on the Internet tend to repeat
+                            predefined chunks as necessary,
+                            making this the first true generator on the Internet. It uses a dictionary of over 200 Latin
+                            words,
+                            combined with a handful of model sentence structures, to generate Lorem Ipsum which looks
+                            reasonable. injected humour,
+                            or non-characteristic words etc.</p>
+                    </div>
+
+                </div>
+
+                <div class="contact-sec2">
+
+                    <div class="common contact-about">
+                        <h3 class="contact-h">ABOUT US</h3>
+                        <a class="contact-index" href="">About Us</a>
+                        <a class="contact-index" href="">Groups</a>
+                        <a class="contact-index" href="">Contact</a>
+                        <a class="contact-index" href="">Events</a>
+                        <a class="contact-index" href="">Help & FAQs</a>
+                    </div>
+
+                    <div class="common contact-site">
+                        <h3 class="contact-h">SITE</h3>
+                        <a class="contact-index" href="">Term of Use</a>
+                        <a class="contact-index" href="">Privacy Policy</a>
+                        <a class="contact-index" href="">Sitemap</a>
+                    </div>
+
+                    <div class="common contact-con">
+                        <h3 class="contact-h">CONNECT</h3>
+                        <a class="contact-index" href="">Link or SignUp for Newslatter</a>
+                        <div class="footer-icon">
+                            <a class="contact-icon" href="#fb"> <i class="tab-icon fa fa-facebook"></i></a>
+                            <a class="contact-icon fa" href="#twitter"><i class="tab-icon fa fa-twitter"></i></a>
+                            <a class="contact-icon" href="#lin"><i class="tab-icon fa fa-linkedin-square"></i></a>
+                            <a class="contact-icon" href="#inst"><i class="tab-icon fa fa-instagram"></i></a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="contact-border"></div>
+        </div>
+    </footer>
+
+    <section id="copyright">
+        <div class="container">
+            <div class="copy-info">
+                <p class="copy-text">&copy;Copyrights <span class="copy-span">Doctor Network</span> 2017. All Rights Reserved.</p>
+            </div>
+        </div>
+        <!-- Subscribtion SECTION End -->
+    </section>
+
+    <!-- Script Start -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
+    <script>
+        // $(".bannerSlider").slick();
+        $(document).ready(function () {
+            $('.bannerSlider').slick({
+                fade: true,
+                infinite: true,
+                // autoplay: true,
+                // autoplaySpeed: 700
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            $('.speciality-slider').slick({
+                infinite: true,
+                slidesToShow: 5,
+                slidesToScroll: 1
+            });
+        });
+
+    </script>
+    <script>
+        $(document).ready(function () {
+            $('.work-slider').slick({
+                infinite: true,
+
+            });
+        });
+
+    </script>
+    <script>
+        $('.count').each(function () {
+            $(this).prop('Counter', 0).animate({
+                Counter: $(this).text()
+            }, {
+                duration: 4000,
+                easing: 'swing',
+                step: function (now) {
+                    $(this).text(Math.ceil(now));
+                }
+            });
+        })
+    </script>
+    <script>
+        $('.icon').click(function () {
+            $('.main-ul').toggleClass("icon-style");
+        });
+    </script>
+       <script>
+        function myFunction(x) {
+            x.classList.toggle("change");
+        }
+    </script>
+</body>
+
+</html>
