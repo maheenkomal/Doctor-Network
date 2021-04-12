@@ -399,10 +399,9 @@ form.banner-form {display: flex;flex-direction: column;padding: 22px 25px;}
 
 #article .article-box {
     text-align: center;
-    padding: 129px 0px 0px;
+    padding: 129px 0px 0px 27px;
     max-width: 548px;
     width: 100%;
-    padding-left: 47px;
 }
 /* #article .article-info {
     display: flex;
@@ -450,6 +449,7 @@ form.banner-form {display: flex;flex-direction: column;padding: 22px 25px;}
     font-weight: 300;
     color: #424242;
     font-size: 18px;
+    padding-top: 3px;
 }
 
 #speciality .speciality-h {
@@ -729,10 +729,34 @@ form.banner-form {display: flex;flex-direction: column;padding: 22px 25px;}
 #work .round-shape:nth-child(2) {
     top: 0;
 }
+#work .round-shape:nth-child(3) {
+    right: -70px;
+    left: initial;
+    transform: initial;
+    transform: translate(0%, -50%);
+}
 
+#work .round-shape:nth-child(4) {
+    bottom: -180px;
+    top: initial;
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%, -50%);
+}
 #work .round-box.active1 .round-shape:nth-child(2) img {
     transform: rotate(
 90deg
+);
+}
+
+#work .round-box.active1 .round-shape:nth-child(3) img {
+    transform: rotate(
+120deg
+);
+}
+#work .round-box.active1 .round-shape:nth-child(4) img {
+    transform: rotate(
+190deg
 );
 }
 #work .round-icon {
@@ -768,7 +792,6 @@ form.banner-form {display: flex;flex-direction: column;padding: 22px 25px;}
  );
 }
 
-.round-Images {}
 
 #work .round-box.active3 .round-Images {
     transform: rotate( 
@@ -1050,15 +1073,20 @@ left: 13px;
 
 }
     .slick-next{right: 45px;}
-    #test .test-icon{}
-    h3.cta-h1::after{
-    }
+  
 
     #contact .contact-sec1{
         padding-right:30px ;
     }
     #contact .common{
         padding-right:30px ;
+    }
+    #work .row{
+        display: block;
+    }
+    #work .col6{
+        width: 100%;
+        /* overflow: initial; */
     }
 }
 /* ------------------- MEDIA QUERIES-992 ------------------ */
@@ -1285,8 +1313,7 @@ max-width: initial;
             font-size: 8px;
             line-height: 13px;
         }
-        #test .test-icon{
-            }
+      
             #cta .cta-h1{
                 max-width: 234px;
                 margin: auto;

@@ -17,6 +17,8 @@
     <link rel="stylesheet" type="text/css" href="slick-1.8.1/slick/slick-theme.css">
     <!-- Add the slick-.css if you want default styling -->
     <link rel="stylesheet" type="text/css" href="slick-1.8.1/slick/slick.css">
+       <!-- ADD the Animation if you want default styling-->
+       <!-- <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> -->
     <!--CSS EXTERNAL LINK-->
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -24,7 +26,7 @@
 <body>
     <!--==================================================================
     =============================== NAV-START ========================-->
-    <nav id="nav">
+    <nav id="nav" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="30" >
         <div class="t-nav">
             <div class="container">
                 <div class="top-nav">
@@ -74,7 +76,7 @@
     </nav>
     <!--==================================================================
     =============================== BANNER-START ========================-->
-    <section id="banner">
+    <section id="banner" data-aos="animate__fadeInDown">
 
         <div class="bannerSlider">
 
@@ -110,7 +112,7 @@
         </div>
 
         <div class="container">
-            <div class="banner-tab">
+            <div class="banner-tab"  data-aos="zoom-in-up" data-aos-duration="1000" data-aos-delay="30">
 
                 <input type="radio" name="tabs" id="tab1">
                 <label for="tab1" class="tab tab1">Search</label>
@@ -228,7 +230,7 @@
 
     <!--==================================================================
     =============================== Awareness-START ========================-->
-    <section id="aware">
+    <section id="aware" data-aos="flip-up" data-aos-duration="1000" data-aos-delay="25">
         <div class="container">
             <div class="row">
 
@@ -280,7 +282,7 @@
         <div class="article-info">
             <div class="row">
 
-                <div class="col6">
+                <div class="col6"   data-aos="fade-right" data-aos-duration="1000" data-aos-delay="20">
                     <img class="article-img1" src="images/article-img1.png" alt="missing">
                 </div>
 
@@ -301,7 +303,7 @@
 
         <div class="article-info">
             <div class="row">
-                <div class="col6">
+                <div class="col6" >
 
                     <article class="article-box1">
                         <h1 class="article-h">Collaborate on
@@ -315,7 +317,7 @@
 
 
 
-                <div class="col6">
+                <div class="col6"  data-aos="fade-left" data-aos-duration="1000" data-aos-delay="20">
                     <img class="article-img2" src="images/article-img2.png" alt="missing">
                 </div>
 
@@ -327,7 +329,7 @@
     </section>
     <!--==================================================================
     =============================== Speciality-START ========================-->
-    <section id="speciality">
+    <section id="speciality" data-aos="zoom-in-up" data-aos-duration="1000" data-aos-delay="30">
         <div class="container">
 
             <div class="speciality-text">
@@ -414,7 +416,9 @@
     </section>
     <!--==================================================================
     =============================== Counter-START ========================-->
-    <section id="counter">
+    <section id="counter" data-aos="flip-left"
+    data-aos-easing="ease-out-cubic"
+    data-aos-duration="2000">
         <div class="container">
             <div class="row">
                 <div class=" counter-line counter-box">
@@ -446,7 +450,7 @@
     </section>
     <!--==================================================================
     =============================== Work-START ========================-->
-    <section id="work">
+    <section id="work"  data-aos="zoom-in-down"  data-aos-duration="1000" data-aos-delay="30">
         <div class="container">
             <div class="row">
                 <div class="col6">
@@ -546,12 +550,20 @@
                 <div class="col6">
                     <div class="round-box ">
                         <div class="round-Images">
+
                             <div class="round-shape">
                                 <img class="round-icon" src="images/man.png" alt="missing">
                             </div>
                             <div class="round-shape">
                                 <img class="round-icon" src="images/lady.png" alt="missing">
                             </div>
+                            <div class="round-shape">
+                                <img class="round-icon" src="images/man.png" alt="missing">
+                            </div>
+                            <div class="round-shape">
+                                <img class="round-icon" src="images/lady.png" alt="missing">
+                            </div>
+
                         </div>    
                     </div>
                     <div class="buttons-arrow">
@@ -571,7 +583,7 @@
 
     <!--==================================================================
     =============================== Test-START ========================-->
-    <section id="test">
+    <section id="test" data-aos="fade-left"  data-aos-duration="1000" data-aos-delay="30">
         <div class="container">
 
             <div class="test-card">
@@ -638,11 +650,11 @@
     </section>
     <!--==================================================================
     =============================== CTA-START ========================-->
-    <section id="cta">
+    <section id="cta" >
         <div class="cta-info">
             <div class="container">
 
-                <div class="cta-text">
+                <div class="cta-text" data-aos="zoom-in-up"  data-aos-duration="1000" data-aos-delay="30">
                     <h3 class="cta-h">FOR COMPANIES</h3>
                     <h3 class="cta-h1">You are Missing Out.</h3>
                     <p class="cta-p"> If you are going to use a passage of Lorem Ipsum, you need to be
@@ -660,7 +672,7 @@
     </section>
     <!--==================================================================
     =============================== CTA-START ========================-->
-    <footer id="contact">
+    <footer id="contact" data-aos="fade-up"  data-aos-duration="1000" data-aos-delay="30">
         <div class="container">
             <div class="contact-p row">
                 <div class="contact-sec1">
@@ -869,6 +881,10 @@
 
 
     </script>
+     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+     <script>
+    //    AOS.init();
+     </script>
 </body>
 
 </html>
