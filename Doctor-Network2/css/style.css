@@ -4,11 +4,15 @@
     padding: 0;
     border: 0;
     box-sizing: border-box;
+    /* overflow-x: hidden; */
   }
   
   body {
     font-family: 'Poppins', sans-serif;
     }
+    body::-webkit-scrollbar {
+        display: none;
+      }
     @font-face {
         font-family: myraid-pro;
         src: url('../fonts/Myriad\ Pro\ Regular.ttf');
@@ -141,6 +145,7 @@
 /* main-nav start */
 #nav .main-nav {
     /* width: 100%; */
+    overflow: hidden;
     /* z-index: 999; */
     background-color: #ffffff;
 }
@@ -148,7 +153,7 @@
 #nav .main-box {
     display: flex;
     flex-wrap: wrap;
-    padding: 26px 0px;
+    padding: 25px 0px;
     justify-content: space-between;
 }
 #nav .main-logo{
@@ -183,7 +188,6 @@
     background-size: cover;
     padding: 202px 0px 171px;
     height: 661px;
-    
   }
   #banner {overflow: hidden;}
   #banner .bannerSlider {
@@ -248,8 +252,8 @@
     position: absolute;
     display: flex;
     flex-wrap: wrap;
-    background-color: rgb(64 79 95 / 90%);
-    max-width: 473px;
+    background-color: rgb(44 62 80 / 90%);
+    max-width: 472px;
     width: 100%;
     top: 176px;
     left: 0;
@@ -268,7 +272,7 @@
     flex-basis: 33.33%;
 }
 
-form.banner-form {display: flex;flex-direction: column;padding: 22px 25px;}
+form.banner-form {display: flex;flex-direction: column;padding: 22px 33px;}
 
 #banner .banner-name {
     font-family: inherit;
@@ -396,7 +400,13 @@ form.banner-form {display: flex;flex-direction: column;padding: 22px 25px;}
     line-height: 30px;
     font-weight: 400;
 }
+#aware .col4 {
+    overflow: hidden;
+}
 
+#article .row {
+    overflow: hidden;
+}
 #article .article-box {
     text-align: center;
     padding: 129px 0px 0px 27px;
@@ -417,6 +427,9 @@ form.banner-form {display: flex;flex-direction: column;padding: 22px 25px;}
     height: 520px;
     object-fit: cover;
     object-position: top;
+}
+#article .col6 {
+    line-height: 0;
 }
 #article .article-h::after {
     position: absolute;
@@ -439,6 +452,9 @@ form.banner-form {display: flex;flex-direction: column;padding: 22px 25px;}
     float: right;
     padding-right: 45px;
 }
+#speciality {
+    overflow: hidden;
+}
 #speciality .speciality-text {
     padding: 51px 0px 65px;
     font-family: inherit;
@@ -451,7 +467,13 @@ form.banner-form {display: flex;flex-direction: column;padding: 22px 25px;}
     font-size: 18px;
     padding-top: 3px;
 }
-
+#speciality .image-box {
+    object-fit: cover;
+    object-position: top center;
+    width: 100%;
+    height: 54px;
+    border: none;
+}
 #speciality .speciality-h {
     color: #0e1c29;
     font-size: 48px;
@@ -461,9 +483,9 @@ form.banner-form {display: flex;flex-direction: column;padding: 22px 25px;}
     border: 1px solid #e1e0e4;
     background-color: #ffffff;
     width: 100%;
-    box-shadow: 4px 5px 8px #e8e7e9;
+    box-shadow: 4px 5px 8px #d1d1d4;
     max-width: 206px;
-    padding: 29px 17px;
+    padding: 29px 17px 31px;
     text-align: center;
     margin-right: 38px;
 }
@@ -473,17 +495,18 @@ form.banner-form {display: flex;flex-direction: column;padding: 22px 25px;}
     border-bottom: 1px solid #dfd9de;
     max-width: 98px;
     margin: auto;
+    padding-top: 21px;
 }
 
 #speciality .s-text {
     font-family: inherit;
-    padding: 20px 0px 11px;
+    padding: 19px 0px 11px;
 }
 
 #speciality .s-heading {
     font-size: 18px;
     font-weight: 500;
-    padding: 0px 0px 9px;
+    padding: 0px 0px 7px;
     color: #0e1c29;
 }
 
@@ -495,18 +518,21 @@ form.banner-form {display: flex;flex-direction: column;padding: 22px 25px;}
 }
 
 #speciality .s-image {
-    padding: 0px 0px 14px;
     margin: auto;
+    object-fit: contain;
+    width: 54px;
+    height: 54px;
+    border: none;
 }
 
 #speciality .s-slide.s2 {
-    padding: 27.5px 17px;
+    /* padding: 27.5px 17px; */
 }
 #speciality .speciality-slider {
     max-width: 98%;
 }
 #speciality .s-slide.s5 {
-    padding: 35.5px 17px;
+    /* padding: 35.5px 17px; */
 }
 #speciality .speciality-btn {font-family: inherit;font-weight: 600;font-size: 18px;color: #6dbcdb;background-color: #fff;border: 2px solid #6dbcdb;padding: 14px 26px;}
 
@@ -516,6 +542,7 @@ form.banner-form {display: flex;flex-direction: column;padding: 22px 25px;}
     text-align: center;
 }
 #counter {
+    overflow: hidden;
     background-color: #f2f2f2;
 }
 #counter h2.counter-h {
@@ -553,6 +580,7 @@ form.banner-form {display: flex;flex-direction: column;padding: 22px 25px;}
 }
 
 #work .work-p {
+    padding: 10px 0px 0px;
     font-family: inherit;
     font-size: 24px;
     color: #0e1c29;
@@ -634,6 +662,7 @@ form.banner-form {display: flex;flex-direction: column;padding: 22px 25px;}
     width: 100%;
 }
 #test {
+    overflow:hidden;
     background-color: #f2f2f2;
     padding: 69px 0px;
 }
@@ -730,10 +759,10 @@ form.banner-form {display: flex;flex-direction: column;padding: 22px 25px;}
     top: 0;
 }
 #work .round-shape:nth-child(3) {
-    right: -70px;
+    right: -40%;
     left: initial;
     transform: initial;
-    transform: translate(0%, -50%);
+    transform: translate(-100%, -50%);
 }
 
 #work .round-shape:nth-child(4) {
@@ -749,14 +778,14 @@ form.banner-form {display: flex;flex-direction: column;padding: 22px 25px;}
 );
 }
 
-#work .round-box.active1 .round-shape:nth-child(3) img {
+#work .round-box.active2 .round-shape:nth-child(3) img {
     transform: rotate(
-120deg
+180deg
 );
 }
-#work .round-box.active1 .round-shape:nth-child(4) img {
+#work .round-box.active3 .round-shape:nth-child(4) img {
     transform: rotate(
-190deg
+270deg
 );
 }
 #work .round-icon {
@@ -821,11 +850,11 @@ form.banner-form {display: flex;flex-direction: column;padding: 22px 25px;}
     position: absolute;
     width: 658px;
     height: 658px;
-    border: 1px solid;
+    border: 2px solid #e1e1e1;
     border-style: dashed;
     border-radius: 50%;
     right: -55px;
-    bottom: -160px;
+    bottom: -177px;
 }
 
 #work .buttons-arrow {
@@ -868,6 +897,7 @@ form.banner-form {display: flex;flex-direction: column;padding: 22px 25px;}
     background-repeat: no-repeat;
     background-size: cover;
     padding: 69px 0px 73px;
+    background-attachment: fixed;
 }
 #cta .cta::after {
     content: "";
@@ -895,12 +925,14 @@ form.banner-form {display: flex;flex-direction: column;padding: 22px 25px;}
 #cta .cta-h1 {
     position: relative;
     font-size: 36px;
+    color: #fff;
     font-weight: 600;
 }
 
-#cta .cta-p {font-size: 16px;font-weight: 400;padding: 33px 0px 0px;max-width: 524px;margin: auto;}
+#cta .cta-p {font-size: 16px;color: #fff;font-weight: 400;padding: 33px 0px 0px;max-width: 524px;margin: auto;}
 
 #cta .cta-h {
+    color: #fff;
     font-size: 18px;
     font-weight: 600;
 }
@@ -944,9 +976,9 @@ form.banner-form {display: flex;flex-direction: column;padding: 22px 25px;}
 
 #contact .contact-sec2 {
     display: flex;
-    /* width: 100%; */
-    /* max-width: 640px; */
-    /* justify-content: space-evenly; */
+    width: 100%;
+    max-width: 640px;
+    justify-content: space-evenly;
 }
 
 #contact .contact-index {
@@ -965,6 +997,9 @@ form.banner-form {display: flex;flex-direction: column;padding: 22px 25px;}
     padding-right: 77px;
     /* max-width: 208px; */
 }
+#contact .footer-icon {
+    padding: 8px 0px 0px;
+}
 #contact a.contact-index {
     padding: 0px 0px 14px;
     text-decoration: none;
@@ -976,7 +1011,7 @@ form.banner-form {display: flex;flex-direction: column;padding: 22px 25px;}
 }
 #contact .contact-border {
     border-bottom: 1px solid #e2dcdc;
-    padding: 26px 0px 0px;
+    padding: 47px 0px 0px;
 }
 #contact .contact-sec1 {
     padding-right: 61px;
@@ -1028,6 +1063,14 @@ form.banner-form {display: flex;flex-direction: column;padding: 22px 25px;}
     border-right: 1px solid #e3e3e3;
 }
 #banner .banner-infot {padding-left: 31px;}
+button{
+    outline: none;
+    cursor: pointer;
+}
+.slick-slide {
+    /* // Remove outline // */
+    outline: none;
+  }
 /* ==================================================================
 =============================== MEDIA QUERIES ======================== */
 
@@ -1087,6 +1130,79 @@ left: 13px;
     #work .col6{
         width: 100%;
         /* overflow: initial; */
+    }
+    #work .round-box{
+        position: relative;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+        transform: translate(0 , 216px);
+    }
+    #work .tab-wcontent{
+        max-width: initial;
+    }
+    #work .work-text{
+        max-width: initial;
+        text-align: center;
+    }
+    #work .buttons-arrow{
+        
+right: 0;
+        
+left: 0;
+        
+margin: auto;
+    }
+
+    #work .round-box:before{
+        
+top: -155px;
+        
+left: 0px;
+        
+margin: auto;
+        
+right: 0px;
+        
+transform: rotate(89deg);
+        
+transform: translate(-11, 10px);
+    }
+
+    #work .round-shape:nth-child(1){
+        top: 0;
+        left: 50%;
+    }
+    #work .round-shape:nth-child(2){
+        
+right: -170px;
+        
+top: initial;
+        
+top: 50%;
+        
+left: initial;
+    }
+    #work .round-shape:nth-child(3){
+        
+right: 0;
+        
+bottom: -42%;
+        
+left: 0;
+        
+margin: auto;
+        
+transform: initial;
+    }
+    #work .round-shape:nth-child(4){
+        
+bottom: initial;
+        
+left: 0;
+        
+top: 50%;
     }
 }
 /* ------------------- MEDIA QUERIES-992 ------------------ */
@@ -1155,7 +1271,6 @@ top: 176px;
         overflow: hidden;
         position: fixed;
         width: 100vw;
-        /* max-width: 992px; */
         z-index: 999;
     }
     #nav .main-ul li{
@@ -1174,14 +1289,7 @@ top: 176px;
     margin: initial;
     padding: 96px 0px
 }
-/* Banner--end */
-/* #banner .banner-heading{
-    font-size: 10px;
-    max-width: 340px;
-}
-#banner .banner-para{
-    max-width: 440px;
-} */
+
 #banner .banner-tab{
     position: initial;
 max-width: initial;
@@ -1197,30 +1305,28 @@ max-width: initial;
 }
 #banner .banner-heading{
     max-width: initial;
-    
+    font-size: 35px;
 }
 
 #banner .banner-para{
     max-width: initial;
     margin: auto;
+    font-size: 15px;
 }
 #counter .row{
     display: block;
 }
-#test .test-icon{
-}
+
 #test .test-card{
     display: block;
     width: 100%;
 }
-#test .test-icon{}
+
 #test .card{
     margin-right: initial;
     margin-top: 15px;
 }
-#contact .contact-sec1{
 
-}
 #contact .contact-sec2{width: 100%;}
 #contact .contact-info{max-width: initial;
     text-align: center;
@@ -1233,6 +1339,16 @@ max-width: initial;
     .counter-line {
         flex: 2;
         border-right:initial;
+    }
+    #work .round-box{
+        height: 400px;
+        width: 400px;
+    }
+    #work .round-Images{
+        
+height: 400px;
+        
+width: 400px;
     }
 }
 
@@ -1265,8 +1381,36 @@ max-width: initial;
     float: initial;
     max-width: 285px;
 }
-
-
+#work .round-box{
+    height: 400px;
+    width: 400px;
+    }
+    #work .round-shape{
+        width: 120px;
+        height: 120px;
+    }
+    #work .round-shape:nth-child(2){
+        right: -121px;
+    }
+    #work .buttons-arrow button{
+        height: 45px;
+        width: 45px;
+        font-size: 25px;
+    }
+    #work .round-icon{
+    width: 184px;
+}
+#work .round-box:before{
+   top: -123px;
+}
+#work .buttons-arrow button{
+    height: 35px;
+    width: 35px;
+    font-size: 25px;
+}
+#counter .counter-box{
+    padding: 40px 18px;
+}
 }
 /* ------------------- MEDIA QUERIES-576 ------------------ */
 @media only screen and (max-width: 576px) {
@@ -1282,7 +1426,8 @@ max-width: initial;
     /* Banner--start */
     #banner .banner-heading{
       margin: auto;
-      font-size: 40px;
+      font-size: 30px;
+      line-height: 40px;
     }
 
 /* Banner--end */
@@ -1317,9 +1462,10 @@ max-width: initial;
             #cta .cta-h1{
                 max-width: 234px;
                 margin: auto;
+                font-size: 30px;
             }
-            h3.cta-h1::after{
-                top: 123px;
+            #cta .cta-h1::after{
+                top: 105px;
             }
             /* #contact .contact-icon{
                 padding: initial;
@@ -1327,4 +1473,41 @@ max-width: initial;
             #contact .contact-sec2{
                 display: block;
             }
+    
+            #work .round-box{
+
+height: 300px;
+
+width: 300px;
+
 }
+#banner .tab{
+    flex-basis: 100%;
+}
+#aware .container {
+    padding: 0;
+}
+#aware .aware-text{
+    font-size: 20px;
+}
+#counter .counter-box{
+    padding: 30px 18px;
+}
+            #work .buttons-arrow button{
+                height: 35px;
+                width: 35px;
+                font-size: 25px;
+            }
+            #work .round-Images{
+    height: 300px;
+    width: 300px;
+}
+            #work .round-shape{
+    height: 80px;
+    width: 80px;
+}
+#work .round-box:before{
+    top: -110px;
+}
+
+        }
